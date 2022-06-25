@@ -1,6 +1,6 @@
-from functionality.func import Func
+from functionality.web_driver import WebDriver
 
-func = Func()
+webdriver = WebDriver()
 
-def get_func():
-    return func
+def get_webdriver():
+    return webdriver
