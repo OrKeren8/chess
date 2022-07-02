@@ -1,4 +1,4 @@
-from chess_service.functionality import WebDriver
+from .. functionality.web_driver import WebDriver
 
 
 webdriver = WebDriver()

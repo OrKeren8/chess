@@ -26,7 +26,9 @@ class WebDriver(WebDriverInterface):
         :return: None
         """
         driver = self.install_driver()
-        driver.get('https://www.chess.com/')
+        driver.get('https://www.chess.com/login_and_go?returnUrl=https://www.chess.com/')
+        while True:
+            pass
 
 
 
