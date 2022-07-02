@@ -9,3 +9,11 @@ class WebDriverInterface(ABC):
         :return: None
         """
         raise NotImplementedError
+
+    @abstractmethod
+    def login(self):
+        """login into the game
+
+        :return: None, raised corresponding error
+        """
+        raise NotImplementedError
