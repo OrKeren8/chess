@@ -6,7 +6,7 @@ class WebDriverInterface(ABC):
     def open_page(self):
         """open the main page of the game
 
-        :return: None
+        return: None
         """
         raise NotImplementedError
 
@@ -14,6 +14,6 @@ class WebDriverInterface(ABC):
     def login(self):
         """login into the game
 
-        :return: None, raised corresponding error
+        return: None, raised corresponding error
         """
         raise NotImplementedError

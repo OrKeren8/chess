@@ -18,7 +18,7 @@ class WebDriver(WebDriverInterface):
     def open_page(self):
         """open the main page of the game
 
-        :return: None
+        return: None, raise corresponding error
         """
         options = webdriver.ChromeOptions()  # create options var
         options.add_experimental_option("detach", True)  # make chrome to not close
@@ -28,6 +28,10 @@ class WebDriver(WebDriverInterface):
         self.login()
 
     def login(self):
+        """login into the game
+
+        return: None, raised corresponding error
+        """
         user_name = self.driver.find_element(By.ID, "username")
         password = self.driver.find_element(By.ID, 'password')
 
@@ -35,6 +39,8 @@ class WebDriver(WebDriverInterface):
         password.send_keys(self.password)
 
         self.driver.find_element(By.NAME, 'login').click()
+
+    
 
 
 
