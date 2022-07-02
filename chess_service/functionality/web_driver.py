@@ -39,9 +39,14 @@ class WebDriver(WebDriverInterface):
         password.send_keys(self.password)
 
         self.driver.find_element(By.NAME, 'login').click()
+        self.play_vs_pc()
 
-    
+    def play_vs_pc(self):
+        """play a game against a pc
 
+        return: None, corresponding error
+        """
+        self.driver.find_element(By.LINK_TEXT, "vs Computer").click()
 
 
 

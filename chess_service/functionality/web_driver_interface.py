@@ -17,3 +17,11 @@ class WebDriverInterface(ABC):
         return: None, raised corresponding error
         """
         raise NotImplementedError
+
+    @abstractmethod
+    def play_vs_pc(self):
+        """play a game against a pc
+
+        return: None, corresponding error
+        """
+        raise NotImplementedError
