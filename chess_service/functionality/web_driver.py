@@ -3,6 +3,7 @@ from .web_driver_interface import WebDriverInterface
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
+
 class WebDriver(WebDriverInterface):
 
     chrome_path = 'C:\Program Files (x86)\chromedriver.exe'
