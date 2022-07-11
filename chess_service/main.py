@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import router
+from chess_service.routers import router
 
 app = FastAPI()
 
